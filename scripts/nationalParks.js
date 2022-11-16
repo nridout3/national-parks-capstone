@@ -54,23 +54,4 @@ for (let i = 0; i < parkTypesArray.length; i++) {
     selectParkTypes.appendChild(element);
 }
 
-document.getElementById('parkType').addEventListener("change", function () {
-    let eId = document.getElementById('parkType');
-    let selectedOptions = eId.options[eId.selectedIndex].text;
-    console.log(selectedOptions);
-    let parkNames = nationalParksArray.map(({LocationName }) => LocationName);
-    //console.log(parkNames)
-    //let parksFiltered = parkNames.filter(function (nationalParksArray)
-    //let return = 0;
-    // function getParkNames (parkNames) {
-     //   if (parkNames == ) {
-
-     //  }
-
-   // }
-
-
-
-
-});
 
