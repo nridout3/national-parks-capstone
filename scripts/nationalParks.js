@@ -28,8 +28,11 @@ document.getElementById('selectLocation').addEventListener("change", function ()
     let parkList = document.getElementById('parkList');
     for (let i = 0; i < parksFiltered.length; i++) {
          liTag = document.createElement('li');
-        liTag.innerText = " Park Name: " + parksFiltered[i].LocationName + " Park Address: " + parksFiltered[i].Address;
+        liTag.innerText = "  Name: " + parksFiltered[i].LocationName + "  Address: " + parksFiltered[i].Address + "  City:  " + parksFiltered[i].City + " Zip: " + parksFiltered[i].ZipCode + " Phone:  " + parksFiltered[i].Phone + "  " + "  " + "  " + "  " + " " + " ";
         parkList.appendChild(liTag);
+        const ulElement = document.querySelector('.parkOutput');
+        ulElement.style.backgroundColor = 'green';
+        document.getElementById('parkList').style.color = "aliceblue";
         // if (liTag) {
         //     selectedOptions[i] =
         // }
@@ -75,13 +78,15 @@ document.getElementById('parkType').addEventListener("change", function () {
     let selectedOptions = eId.options[eId.selectedIndex].text;
     console.log(selectedOptions);
     let parkNames = nationalParksArray.map(({LocationName }) => LocationName);
-    console.log(parkNames)
-    //  let parkTypesFiltered = nationalParksArray.filter(function (nationalParksArray) {
-    //        if ( parkNames == 'Historic') {
+    //console.log(parkNames)
+    //let parksFiltered = parkNames.filter(function (nationalParksArray)
+    //let return = 0;
+    // function getParkNames (parkNames) {
+     //   if (parkNames == ) {
 
-    //       }
-    //      return  == 'River';
-    //    }); console.log(parkTypesFiltered)
+     //  }
+
+   // }
 
 
 
