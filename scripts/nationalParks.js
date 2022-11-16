@@ -1,6 +1,5 @@
 let selectedStates;
 let select = document.getElementById('selectLocation');
-let parksArrayLength = nationalParksArray.length;
 
 
 
@@ -63,7 +62,7 @@ let selectParkTypes = document.getElementById('parkType');
 
 for (let i = 0; i < parkTypesArray.length; i++) {
     let options = parkTypesArray[i];
-    //console.log(options)
+    //console.log(options);
     let element = document.createElement('option');
     //console.log(element);
     element.textContent = options;
@@ -75,13 +74,14 @@ document.getElementById('parkType').addEventListener("change", function () {
     let eId = document.getElementById('parkType');
     let selectedOptions = eId.options[eId.selectedIndex].text;
     console.log(selectedOptions);
-
+    let parkNames = nationalParksArray.map(({LocationName }) => LocationName);
+    console.log(parkNames)
     //  let parkTypesFiltered = nationalParksArray.filter(function (nationalParksArray) {
-    //      if (nationalParksArray.LocationName == selectedOptions.string) {
+    //        if ( parkNames == 'Historic') {
 
-    //     }
-    //     return selectedOptions === nationalParksArray.LocationName;
-    //  }); console.log(parkTypesFiltered)
+    //       }
+    //      return  == 'River';
+    //    }); console.log(parkTypesFiltered)
 
 
 
