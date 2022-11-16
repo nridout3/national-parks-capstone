@@ -1,4 +1,4 @@
-let selectedStates;
+
 let select = document.getElementById('selectLocation');
 
 

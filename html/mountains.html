@@ -8,8 +8,13 @@
     <title>Mountain Information</title>
     <link rel="stylesheet" href="/css/styles.css">
     <style>
+        h2 {
+            margin: 15px;
+            padding: 20px;
+            transform: translate(17%);
+        }
         main {
-            transform: translate(30%);
+            transform: translate(55%);
             font-size: 22px;
             background-color: rgba(63, 83, 12, 0.69);
             border-radius: 20px;
@@ -17,6 +22,11 @@
             padding: 35px 25px;
             width: 600px;
             color: aliceblue;
+        }
+        .mtOutput{
+            width: 600px;
+            border: 6px solid black;
+            transform: translate(60%);
         }
     </style>
 
@@ -37,7 +47,7 @@
         <h1>Mountain Infromation</h1>
     </header>
 
-
+    <h2> When you select a mountain a description about that mountain will appear</h2>
     <main>
         <fieldset style="border-width: 6px; color: black; border-color: black;">
             <legend>Select a Mountain</legend>
@@ -50,7 +60,9 @@
 
 
     <section>
-
+        <fieldset class="mtOutput">
+            <ul id="mtList"></ul>
+        </fieldset>
     </section>
 
 
