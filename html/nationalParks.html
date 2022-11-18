@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Parks</title>
-     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <style>
         h2 {
             margin: 15px;
             padding: 20px;
             transform: translate(3%);
         }
-       
-        main{
+
+        main {
             transform: translate(30%);
             font-size: 22px;
             background-color: rgba(63, 83, 12, 0.69);
@@ -24,12 +24,14 @@
             color: aliceblue;
 
         }
-        .parkOutput, .parkTypeOutput {
+
+        .parkOutput,
+        .parkTypeOutput {
             width: 600px;
             border: 6px solid antiquewhite;
             transform: translate(30%);
         }
-            
+
         section {
             transform: translate(32%);
             font-size: 22px;
@@ -59,13 +61,14 @@
     </header>
 
 
-    <h2>When you click a State or U.S Territory all the national parks associated with that State or U.S Territory will appear, along with their addresses.</h2>
+    <h2>When you click a State or U.S Territory all the national parks associated with that State or U.S Territory will
+        appear, along with their addresses and phone number.</h2>
 
     <main>
         <fieldset style="border-width: 6px;  border-color: black;">
             <legend> Select a State or U.S. Territory</legend>
-                <select style="border-color: black; border-width: 5px; font-size: medium; color: black;" name="select"
-                    id="selectLocation">
+            <select style="border-color: black; border-width: 5px; font-size: medium; color: black;" name="select"
+                id="selectLocation">
                 <option value="" hidden element>Select</option>
             </select>
         </fieldset>
@@ -73,35 +76,38 @@
     <br>
 
 
-<fieldset class="parkOutput">
-    <ul id="parkList" class="output"></ul>
-</fieldset>
-   
-    
-    
-  <h2>When you select a Park Type, the selected type will appear</h2>
-
-<section>
-    <fieldset style="border-width: 6px;  border-color: black;">
-            <legend>Select A Park Type</legend>
-            <select style="border-color: black; border-width: 5px; font-size: medium; color: black;"name="" id="parkType">
-            <option value="" hidden element>Select</option>
-            </select>
+    <fieldset class="parkOutput">
+        <ul id="parkList" class="output"></ul>
     </fieldset>
-  </section> 
-
-  
 
 
 
-   
-   
+    <h2>When you select a Park Type, the selected type will appear</h2>
+
+    <section>
+        <fieldset style="border-width: 6px;  border-color: black;">
+            <legend>Select A Park Type</legend>
+            <select style="border-color: black; border-width: 5px; font-size: medium; color: black;" name=""
+                id="parkType">
+                <option value="" hidden element>Select</option>
+            </select>
+        </fieldset>
+    </section>
+
+
+<fieldset class="parkTypeOutput">
+    <ul id="parkType"></ul>
+</fieldset>
+
+
+
+
     <script src="/scripts/locationData.js"></script>
     <script src="/scripts/nationalParkData.js"></script>
     <script src="/scripts/parkTypeData.js"></script>
     <script src="/scripts/nationalParks.js"></script>
-  
-   
+
+
 
 </body>
 

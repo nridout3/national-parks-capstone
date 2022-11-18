@@ -6,7 +6,7 @@ for (let i = 0; i < mountainsArray.length; i++) {
     el.textContent = opt;
     el.value = opt;
     select.appendChild(el);
-} 
+}
 
 document.getElementById('selectMt').addEventListener("change", function () {
     let eId = document.getElementById('selectMt');
